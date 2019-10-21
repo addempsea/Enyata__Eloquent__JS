@@ -1,11 +1,11 @@
 function countBs(word) {
-  let count = 0;
+  let count = [];
   for (let i = 0; i < word.length; i++) {
     if (word[i] == "B") {
-      count++;
+      count.push(i);
     }
   }
-  return count;
+  return count.length;
 }
 
 console.log(countBs("BBabBtunde"));
@@ -13,13 +13,13 @@ console.log(countBs("BBabBtunde"));
 
 // To test for any other character
 function countBs(word, letter) {
-  let count = 0;
+  let count = [];
   for (let i = 0; i < word.length; i++) {
     if (word[i] == letter) {
-      count++;
+      count.push(i);
     }
   }
-  return count;
+  return count.length;
 }
 
 console.log(countBs("BBabBtunde", "B"));

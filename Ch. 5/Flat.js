@@ -1,6 +1,12 @@
 let arrays = [[1, 2, 3], [4, 5], [6]];
 
-const arr = arrays.reduce((a, b) => a.concat(b));
+function reduction(a, b) {
+  return a.concat(b);
+}
+
+let arr = arrays.reduce(reduction);
+
+
 console.log(arr);
 
 
